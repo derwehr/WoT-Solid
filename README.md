@@ -16,48 +16,26 @@ see the files [AuthenticationStore.ts](app/models/AuthenticationStore.ts) and [L
 <br clear="right"/>
 
 ### Connecting Wearables
-
-<video width="300" style="float:right;">
-    <source src="images/connect.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
 The Application connects to BLE wearable devices described with [W3C WoT Thing Descriptions](https://www.w3.org/TR/wot-thing-description11/). See the [tds](tds) folder for examples of Thing Descriptions for different wearables.
 
-<br clear="right">
-
----
-
-<video width="300" style="float:right;">
-    <source src="images/subscribe.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video
+https://github.com/derwehr/WearableSolid/assets/7078901/6b3a02ac-d977-49f4-8393-34b256ddcd28
 
 After connecting to a wearable, users can browse the Thing's available [Interaction Affordaces](https://www.w3.org/TR/wot-thing-description11/#interaction-affordances), subscribe to Events Affordances and read Property Affordances.
 
-<br clear="right">
+https://github.com/derwehr/WearableSolid/assets/7078901/3cdc5a95-3fda-415f-9b4d-2e6abf4f76b4
 
 ### Live Data Visualization
 
-<video width="300" style="float:right;">
-    <source src="images/liveData.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
 Subscribed Events are visualized in real-time using the [Victory Native](https://formidable.com/open-source/victory/docs/native/) library.
 
-<br clear="right">
+https://github.com/derwehr/WearableSolid/assets/7078901/f9a2d0bb-1ca9-449b-8fa4-a6500d1c3acd
 
 ### SoLiD Data Storage
 
-<video width="300" style="float:right;">
-    <source src="images/visualize.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
 The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in a [Turtle](https://www.w3.org/TR/turtle/).
-
 Stored data is also visualized to allow analyzing historical data comprehensively. 
+
+https://github.com/derwehr/WearableSolid/assets/7078901/4b8a55ef-b641-49b7-a69c-1109ad27e9a7
 
 ## Installation
 The app is built using [React Native](https://reactnative.dev/) and [Expo](https://expo.io/). To run the app, you need to have Node.js and npm installed.
