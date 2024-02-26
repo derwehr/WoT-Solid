@@ -1,0 +1,42 @@
+{
+    "@context": [
+      "https://www.w3.org/2022/wot/td/v1.1",
+      {
+        "sbo": "https://freumi.inrupt.net/SimpleBluetoothOntology.ttl#",
+        "bdo": "https://freumi.inrupt.net/BinaryDataOntology.ttl#",
+        "ex": "https://example.org#",
+        "schema": "http://schema.org/"
+      },
+      {"@language": "en"}
+    ],
+    "@type": ["s4wear:NearBodyWearable"],
+    "title": "Garmin Cadence Sensor 2",
+    "base": "gatt://{{MacOrWebBluetoothId}}/",
+    "description": "A cadence sensor for cycling.",
+    "schema:manufacturer": "Garmin",
+    "securityDefinitions": {
+      "nosec_sc": {
+        "scheme": "nosec"
+      }
+    },
+    "security": ["nosec_sc"],
+    "sbo:hasGAPRole": "sbo:Peripheral",
+    "sbo:isConnectable": true,
+    "events": {
+      "cadence": {
+        "title": "Cadence",
+        "description": "Wheel and crank revolution data.",
+        "unit": "http://qudt.org/vocab/unit/REV-PER-MIN",
+        "data": {
+          "type": "integer"
+        },
+        "forms": [
+          {
+            "href": "./00001816-0000-1000-8000-00805f9b34fb/00002a5b-0000-1000-8000-00805f9b34fb/",
+            "contentType": "application/x.binary-data-stream",
+            "sbo:methodName": "sbo:notify"
+          }
+        ]
+      }
+    }
+  }

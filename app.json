@@ -18,13 +18,66 @@
       "supportsTablet": true
     },
     "android": {
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "wearable-wot.web.app"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.wearablewot",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_ADVERTISE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBtKbx68J_nXsrTNDteZ9jB8en439Jz8Ck"
+        }
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2bbca9f9-0fd2-4661-94ae-c76fd297c328"
+      }
+    },
+    "plugins": [
+      "expo-localization",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ],
+      [
+        "@matthewwarnes/react-native-ble-manager-plugin",
+        {
+          "isBackgroundEnabled": true,
+          "useLocation": true
+        }
+      ]
+    ]
   }
 }
