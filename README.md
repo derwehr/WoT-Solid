@@ -5,7 +5,6 @@ Below are some screenshots and videos showcasing the app's features.
 ### SoLiD Authentication
 
 <img align="right" width="300" src="images/SolidAuthentication.png">
-
 In order to use the app, the user needs to authenticate with a SoLiD Pod. The app uses the **SoLiD OIDC authentication** flow to authenticate the user.
 
 The user is redirected to the SoLiD Pod's authentication page, where the user can log in and grant the app access to the Pod.
@@ -17,53 +16,38 @@ see the files [AuthenticationStore.ts](app/models/AuthenticationStore.ts) and [L
 <br clear="right"/>
 
 ### Connecting Wearables
-<table class="images" width="100%" style="border:0px solid white; width:100%;">
-    <tr style="border: 0px">
-        <td width="66%" style="border:0px; width: 66.66%">
-            The Application connects to BLE wearable devices described with <a href="https://www.w3.org/TR/wot-thing-description11/">W3C WoT Thing Descriptions</a>. See the [tds](tds) folder for examples of Thing Descriptions for different wearables.
-        </td>
-        <td width="33%" style="border:0px; width: 33.33%">
-            <video src="https://github.com/derwehr/WearableSolid/assets/7078901/6b3a02ac-d977-49f4-8393-34b256ddcd28"></video>
-        </td>
-    </tr>
-</table>
-<table>
-    <tr style="border: 0px">
-        <td width="66%" style="border:0px; width: 66.66%">
-            After connecting to a wearable, users can browse the Thing's available <a href="https://www.w3.org/TR/wot-thing-description11/#interaction-affordances">Interaction Affordaces</a>, subscribe to Events Affordances and read Property Affordances.
-        </td>
-        <td width="33%" style="border:0px; width: 33.33%">
-            <video src="https://github.com/derwehr/WearableSolid/assets/7078901/3cdc5a95-3fda-415f-9b4d-2e6abf4f76b4"></video>
-        </td>
-    </tr>
-</table>
+
+<img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/d03f3e0b-b723-458b-9b2a-c58a08713761">
+
+The Application connects to BLE wearable devices described with [W3C WoT Thing Descriptions](https://www.w3.org/TR/wot-thing-description11/). See the [tds](tds) folder for examples of Thing Descriptions for different wearables.
+
+<br clear="right"/>
+
+---
+
+<img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/b1e77893-4706-4eca-80c0-e7830ab977c7">
+
+
+After connecting to a wearable, users can browse the Thing's available [Interaction Affordaces](https://www.w3.org/TR/wot-thing-description11/#interaction-affordances), subscribe to Events Affordances and read Property Affordances.
+
+<br clear="right"/>
 
 ### Live Data Visualization
 
-<table>
-    <tr style="border: 0px">
-        <td width="66%" style="border:0px; width: 66.66%">
-            Subscribed Events are visualized in real-time using the <a href="https://formidable.com/open-source/victory/docs/native/">Victory Native</a> library.
-        </td>
-        <td width="33%" style="border:0px; width: 33.33%">
-            <video src="https://github.com/derwehr/WearableSolid/assets/7078901/f9a2d0bb-1ca9-449b-8fa4-a6500d1c3acd"></video>
-        </td>
-    </tr>
-</table>
+<img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/bb48375f-635d-4be6-93f3-c3ed84e05b52">
+
+Subscribed Events are visualized in real-time using the [Victory Native](https://formidable.com/open-source/victory/docs/native/) library.
+
+<br clear="right"/>
 
 ### SoLiD Data Storage
 
-<table>
-    <tr style="border: 0px">
-        <td width="66%" style="border:0px; width: 66.66%">
-            The User may store the collected data in <a href="https://solidproject.org/">SoLiD PODs</a>. The data is stored in <a href="https://www.w3.org/TR/turtle/">Turtle</a>.
+<img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/c6a6ba36-6b01-47d3-87b6-a4d30cc4e2ec">
+
+The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in [Turtle](https://www.w3.org/TR/turtle/).
 Stored data is also visualized to allow analyzing historical data comprehensively. 
-        </td>
-        <td width="33%" style="border:0px; width: 33.33%">
-            <video src="https://github.com/derwehr/WearableSolid/assets/7078901/4b8a55ef-b641-49b7-a69c-1109ad27e9a7"></video>
-        </td>
-    </tr>
-</table>
+
+<br clear="right"/>
 
 ### Annotated Data
 Below is an example of a Turtle file with annotated data. The collected measurements are stored as SOSA/SSN observations, annotated with the measurement's unit and datatype parsed from the TD, time and the location of the measurement gathered by the Android device, plus the authenticated user as the SOSA `featureOfInterest`.
