@@ -32,7 +32,7 @@ https://github.com/derwehr/WearableSolid/assets/7078901/f9a2d0bb-1ca9-449b-8fa4-
 
 ### SoLiD Data Storage
 
-The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in a [Turtle](https://www.w3.org/TR/turtle/).
+The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in [Turtle](https://www.w3.org/TR/turtle/).
 Stored data is also visualized to allow analyzing historical data comprehensively. 
 
 https://github.com/derwehr/WearableSolid/assets/7078901/4b8a55ef-b641-49b7-a69c-1109ad27e9a7
