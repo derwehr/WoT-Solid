@@ -37,6 +37,28 @@ Stored data is also visualized to allow analyzing historical data comprehensivel
 
 https://github.com/derwehr/WearableSolid/assets/7078901/4b8a55ef-b641-49b7-a69c-1109ad27e9a7
 
+### Annotated Data
+Below is an example of a Turtle file with annotated data. The collected measurements are stored as SOSA/SSN observations, annotated with the measurement's unit and datatype parsed from the TD, time and the location of the measurement gathered by the Android device, plus the authenticated user as the SOSA `featureOfInterest`.
+```turtle
+@prefix qudt: <http://qudt.org/1.1/schema/qudt#>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
+@prefix sosa: <http://www.w3.org/ns/sosa/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+_:temperatureEventObservation1699558311647 a sosa:Observation;
+    geo:lat 49.5946528;
+    geo:long 11.0034048;
+    sosa:hasFeatureOfInterest <https://derwehr.solidcommunity.net/profile/card#me>;
+    sosa:hasResult _:temperatureEventResult1699558311647;
+    sosa:observedProperty <https://w3id.org/seas/TemperatureProperty>;
+    sosa:resultTime "2023-11-09T19:31:51.647000+00:00"^^xsd:dateTime.
+
+_:temperatureEventResult1699558311647 a sosa:Result;
+    qudt:numericValue 23.407204199294842;
+    qudt:unit "http://qudt.org/1.1/vocab/unit#DEG_C";
+    sosa:isResultOf _:temperatureEventObservation1699558311647.
+```
+
 ## Installation
 The app is built using [React Native](https://reactnative.dev/) and [Expo](https://expo.io/). To run the app, you need to have Node.js and npm installed.
 
