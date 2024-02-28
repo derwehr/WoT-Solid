@@ -19,8 +19,13 @@ see the files [AuthenticationStore.ts](app/models/AuthenticationStore.ts) and [L
 
 <img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/d03f3e0b-b723-458b-9b2a-c58a08713761">
 
-The Application connects to BLE wearable devices described with [W3C WoT Thing Descriptions](https://www.w3.org/TR/wot-thing-description11/). See the [tds](tds) folder for examples of Thing Descriptions for different wearables.
-
+The Application connects to BLE wearable devices described with [W3C WoT Thing Descriptions](https://www.w3.org/TR/wot-thing-description11/). See the [td examples](https://github.com/derwehr/WearableSolid/tree/master/td%20examples) folder for examples of Thing Descriptions for different wearables. This was successfully tested with the following devices:
+ - [Polar H9 Heartrate sensor](https://www.polar.com/en/sensors/h9-heart-rate-sensor)
+ - [Magene H303 Heartrate Sensor](https://www.magene.com/sensors/52-h303-heart-rate-monitor.html)
+ - [Garmin Cadence Sensor 2](https://www.garmin.com/en-US/p/641212/)
+ - [Wahoo RPM Bike Cadence Sensor](https://www.wahoofitness.com/devices/bike-sensors/wahoo-rpm-cadence-sensor)
+ - [RuuviTagW](https://ruuvi.com/ruuvitag/)
+    
 <br clear="right"/>
 
 ---
@@ -30,6 +35,7 @@ The Application connects to BLE wearable devices described with [W3C WoT Thing D
 
 After connecting to a wearable, users can browse the Thing's available [Interaction Affordaces](https://www.w3.org/TR/wot-thing-description11/#interaction-affordances), subscribe to Events Affordances and read Property Affordances.
 
+The screencast on the right shows the Interaction Affordances of the Polar H9 described by its [Thing Model](https://github.com/derwehr/WearableSolid/blob/master/td%20examples/PolarH9.json)
 <br clear="right"/>
 
 ### Live Data Visualization
@@ -38,14 +44,17 @@ After connecting to a wearable, users can browse the Thing's available [Interact
 
 Subscribed Events are visualized in real-time using the [Victory Native](https://formidable.com/open-source/victory/docs/native/) library.
 
+In the screencast on the right, after selecting the heart-rate event from the Polar H9 the app displays a line-plot of the measurements as the device sends it.
+
 <br clear="right"/>
 
 ### SoLiD Data Storage
 
 <img align="right" width="300" src="https://github.com/derwehr/WearableSolid/assets/7078901/c6a6ba36-6b01-47d3-87b6-a4d30cc4e2ec">
 
-The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in [Turtle](https://www.w3.org/TR/turtle/).
-Stored data is also visualized to allow analyzing historical data comprehensively. 
+The User may store the collected data in [SoLiD PODs](https://solidproject.org/). The data is stored in [Turtle](https://www.w3.org/TR/turtle/), see [Annotated Data](#annotated-data) for an example.
+
+Stored data is also visualized to allow analyzing historical data comprehensively. Numerical data from the Knowledge Graph is displayed as line plots, and geographic locations are displayed on a map.
 
 <br clear="right"/>
 
