@@ -5,10 +5,8 @@ import {
   NativeEventEmitter,
   PermissionsAndroid,
   Platform,
-  ToastAndroid,
   View,
   ViewStyle,
-  EmitterSubscription,
 } from "react-native";
 import { AppStackScreenProps } from "app/navigators";
 import BleManager, {

@@ -80,16 +80,19 @@ _:temperatureEventResult1699558311647 a sosa:Result;
     sosa:isResultOf _:temperatureEventObservation1699558311647.
 ```
 
-## Installation
+## Building
 The app is built using [React Native](https://reactnative.dev/) and [Expo](https://expo.io/). To run the app, you need to have Node.js and npm installed.
 
 1. Clone the repository
 2. Install the dependencies
     ```bash
-    npm install
+    yarn install
     ```
 3. Start the app
     ```bash
-    npm start
+    yarn run start
     ```
     This will start the Expo development server and open the Expo DevTools in your browser. You can then run the app on an emulator or on your phone using the Expo Go app.
+
+## Installing
+The app is not yet available on the App Store or Google Play Store. However, you can download the APK from the [releases](https://github.com/derwehr/WoT-Solid/releases) page and install it on your Android device.
