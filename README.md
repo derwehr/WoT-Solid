@@ -1,4 +1,4 @@
-# Taking Care of Your Data: A SoLiD-based Mobile App for Wearable Data Collection and Visualization
+# Taking Care of Your Data: A WoT- & SoLiD-based Mobile App for Wearable Data Collection and Visualization
 
 ## Showcase
 Below are some screenshots and videos showcasing the app's features.
