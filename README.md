@@ -61,7 +61,7 @@ Stored data is also visualized to allow analyzing historical data comprehensivel
 ### Annotated Data
 Below is an example of a Turtle file with annotated data. The collected measurements are stored as SOSA/SSN observations, annotated with the measurement's unit and datatype parsed from the TD, time and the location of the measurement gathered by the Android device, plus the authenticated user as the SOSA `featureOfInterest`.
 ```turtle
-@prefix qudt: <http://qudt.org/1.1/schema/qudt#>.
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#>.
 @prefix unit: <http://qudt.org/2.1/vocab/unit#>.
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
@@ -80,7 +80,6 @@ _:heartrateResult1702382040625 a sosa:Result;
     qudt:numericValue "72"^^xsd:decimal;
     qudt:unit unit:BEAT-PER-MIN;
     sosa:isResultOf _:heartrateObservation1702382040625.
-
 ```
 
 ## Building
