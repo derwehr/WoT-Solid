@@ -72,14 +72,15 @@ _:heartrateObservation1702382040625 a sosa:Observation;
     sosa:hasFeatureOfInterest <https://ex.solidpod/profile/card#me>;
     sosa:resultTime "2023-12-12T11:54:00.625Z"^^xsd:dateTime;
     sosa:observedProperty s4wear:HeartRate;
-    geo:lat 49.5946725 unit:DEG;
-    geo:long 11.0033571 unit:DEG;
+    geo:lat "49.594672"^^unit:DEG;
+    geo:long "11.0033571"^^unit:DEG;
     sosa:hasResult _:heartrateResult1702382040625.
 
 _:heartrateResult1702382040625 a sosa:Result;
     qudt:numericValue "72"^^xsd:decimal;
     qudt:unit unit:BEAT-PER-MIN;
     sosa:isResultOf _:heartrateObservation1702382040625.
+
 ```
 
 ## Building
