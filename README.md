@@ -62,22 +62,24 @@ Stored data is also visualized to allow analyzing historical data comprehensivel
 Below is an example of a Turtle file with annotated data. The collected measurements are stored as SOSA/SSN observations, annotated with the measurement's unit and datatype parsed from the TD, time and the location of the measurement gathered by the Android device, plus the authenticated user as the SOSA `featureOfInterest`.
 ```turtle
 @prefix qudt: <http://qudt.org/1.1/schema/qudt#>.
+@prefix unit: <http://qudt.org/2.1/vocab/unit#>.
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>.
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix s4wear: <https://saref.etsi.org/saref4wear/> .
 
-_:temperatureEventObservation1699558311647 a sosa:Observation;
-    geo:lat 49.5946528;
-    geo:long 11.0034048;
-    sosa:hasFeatureOfInterest <https://derwehr.solidcommunity.net/profile/card#me>;
-    sosa:hasResult _:temperatureEventResult1699558311647;
-    sosa:observedProperty <https://w3id.org/seas/TemperatureProperty>;
-    sosa:resultTime "2023-11-09T19:31:51.647000+00:00"^^xsd:dateTime.
+_:heartrateObservation1702382040625 a sosa:Observation;
+    sosa:hasFeatureOfInterest <https://ex.solidpod/profile/card#me>;
+    sosa:resultTime "2023-12-12T11:54:00.625Z"^^xsd:dateTime;
+    sosa:observedProperty s4wear:HeartRate;
+    geo:lat 49.5946725 unit:DEG;
+    geo:long 11.0033571 unit:DEG;
+    sosa:hasResult _:heartrateResult1702382040625.
 
-_:temperatureEventResult1699558311647 a sosa:Result;
-    qudt:numericValue 23.407204199294842;
-    qudt:unit "http://qudt.org/1.1/vocab/unit#DEG_C";
-    sosa:isResultOf _:temperatureEventObservation1699558311647.
+_:heartrateResult1702382040625 a sosa:Result;
+    qudt:numericValue "72"^^xsd:decimal;
+    qudt:unit unit:BEAT-PER-MIN;
+    sosa:isResultOf _:heartrateObservation1702382040625.
 ```
 
 ## Building
