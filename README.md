@@ -24,7 +24,7 @@ The Application connects to BLE wearable devices described with [W3C WoT Thing D
  - [Magene H303 Heartrate Sensor](https://www.magene.com/sensors/52-h303-heart-rate-monitor.html)
  - [Garmin Cadence Sensor 2](https://www.garmin.com/en-US/p/641212/)
  - [Wahoo RPM Bike Cadence Sensor](https://www.wahoofitness.com/devices/bike-sensors/wahoo-rpm-cadence-sensor)
- - [RuuviTagW](https://ruuvi.com/ruuvitag/)
+ - [RuuviTag](https://ruuvi.com/ruuvitag/)
     
 <br clear="right"/>
 
