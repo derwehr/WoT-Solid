@@ -51,7 +51,7 @@
       ],
       "config": {
         "googleMaps": {
-          "apiKey": "API_KEY"
+          "apiKey": "AIzaSyBt9cuI-NR4LvBvtKzgBkg8Bt1JjtZPcfY"
         }
       }
     },
@@ -76,6 +76,14 @@
         {
           "isBackgroundEnabled": true,
           "useLocation": true
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
         }
       ]
     ]
