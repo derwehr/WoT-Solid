@@ -34,25 +34,25 @@ keywords:
   - RDF
   - Solid
   - Web of Things
-  preferred-citation:
-    type: article
-    authors:
-      - given-names: Thomas
-      family-names: Wehr
-      email: thomas.wehr@fau.de
-      affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
-      orcid: 'https://orcid.org/0000-0002-0678-5019'
-      - given-names: Michael
-      family-names: Freund
-      email: michael.freund@fau.de
-      affiliation: Fraunhofer IIS Nürnberg
-      orcid: 'https://orcid.org/0000-0003-1601-9331'
-     - given-names: Andreas
-      family-names: Harth
-      email: andreas.harth@fau.de
-      affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
-      orcid: 'https://orcid.org/0000-0002-0702-510X'
-    journal: "Extended Semantic Web Conference"
-    month: 5
-    title: "Taking Control of Your Health Data: A Solid-based Mobile App for Wearable Data Collection and RDF Visualization"
-    year: 2024
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Thomas
+    family-names: Wehr
+    email: thomas.wehr@fau.de
+    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
+    orcid: 'https://orcid.org/0000-0002-0678-5019'
+    - given-names: Michael
+    family-names: Freund
+    email: michael.freund@fau.de
+    affiliation: Fraunhofer IIS Nürnberg
+    orcid: 'https://orcid.org/0000-0003-1601-9331'
+   - given-names: Andreas
+    family-names: Harth
+    email: andreas.harth@fau.de
+    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
+    orcid: 'https://orcid.org/0000-0002-0702-510X'
+  journal: "Extended Semantic Web Conference"
+  month: 5
+  title: "Taking Control of Your Health Data: A Solid-based Mobile App for Wearable Data Collection and RDF Visualization"
+  year: 2024
