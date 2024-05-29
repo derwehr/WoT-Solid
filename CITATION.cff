@@ -29,22 +29,7 @@ identifiers:
   - type: url
     value: >-
       https://2024.eswc-conferences.org/wp-content/uploads/2024/05/77770325.pdf
-abstract: >-
-  While wearables generate valuable health data, proprietary
-  ecosystems limit interoperability and user control. We
-  address this challenge with a user-friendly Android
-  application that seamlessly collects data from diverse
-  wearables via the Web of Things (WoT), converts the
-  collected data into interoperable RDF using the SOSA/SSN
-  ontology, and stores RDF in user-controlled Solid servers.
-  Unlike existing solutions, our approach includes mapping
-  the data to established ontologies and provides a user
-  interface, empowering everyday users to explore their
-  health data through interactive visualizations. We
-  showcase the application’s functionalities through live
-  demonstrations – code, demo videos, and an installable apk
-  are publicly available at https:
-  //github.com/derwehr/WoT-Solid/.
+abstract:  "While wearables generate valuable health data, proprietary ecosystems limit interoperability and user control. We address this challenge with a user-friendly Android application that seamlessly collects data from diverse wearables via the Web of Things (WoT), converts the collected data into interoperable RDF using the SOSA/SSN ontology, and stores RDF in user-controlled Solid servers. Unlike existing solutions, our approach includes mapping the data to established ontologies and provides a user interface, empowering everyday users to explore their health data through interactive visualizations. We showcase the application’s functionalities through live demonstrations – code, demo videos, and an installable apk are publicly available at https://github.com/derwehr/WoT-Solid/.
 keywords:
   - RDF
   - Solid
