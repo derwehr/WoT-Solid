@@ -1,58 +1,33 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: >-
-  Taking Control of Your Health Data: A Solid-based Mobile
-  App for Wearable Data Collection and RDF Visualization
-message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
-type: article
+message: "If you use this software, please cite it as below."
 authors:
   - given-names: Thomas
     family-names: Wehr
     email: thomas.wehr@fau.de
-    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
     orcid: 'https://orcid.org/0000-0002-0678-5019'
   - given-names: Michael
     family-names: Freund
     email: michael.freund@fau.de
-    affiliation: Fraunhofer IIS Nürnberg
     orcid: 'https://orcid.org/0000-0003-1601-9331'
   - given-names: Andreas
     family-names: Harth
     email: andreas.harth@fau.de
-    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
     orcid: 'https://orcid.org/0000-0002-0702-510X'
-identifiers:
-  - type: url
-    value: >-
-      https://2024.eswc-conferences.org/wp-content/uploads/2024/05/77770325.pdf
-abstract:  "While wearables generate valuable health data, proprietary ecosystems limit interoperability and user control. We address this challenge with a user-friendly Android application that seamlessly collects data from diverse wearables via the Web of Things (WoT), converts the collected data into interoperable RDF using the SOSA/SSN ontology, and stores RDF in user-controlled Solid servers. Unlike existing solutions, our approach includes mapping the data to established ontologies and provides a user interface, empowering everyday users to explore their health data through interactive visualizations. We showcase the application’s functionalities through live demonstrations – code, demo videos, and an installable apk are publicly available at https://github.com/derwehr/WoT-Solid/.
-keywords:
-  - RDF
-  - Solid
-  - Web of Things
+title: "Taking Control of Your Health Data: A Solid-based Mobile App for Wearable Data Collection and RDF' Visualization"
+url: "https://github.com/derwehr/WoT-Solid"
 preferred-citation:
   type: article
   authors:
-    - given-names: Thomas
-    family-names: Wehr
-    email: thomas.wehr@fau.de
-    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
+  - given-names: "Thomas"
+    family-names: "Wehr"
     orcid: 'https://orcid.org/0000-0002-0678-5019'
-    - given-names: Michael
-    family-names: Freund
-    email: michael.freund@fau.de
-    affiliation: Fraunhofer IIS Nürnberg
+  - given-names: "Michael"
+    family-names: "Freund"
     orcid: 'https://orcid.org/0000-0003-1601-9331'
-   - given-names: Andreas
-    family-names: Harth
-    email: andreas.harth@fau.de
-    affiliation: Friedrich-Alexander-University Erlangen-Nürnberg
+  - given-names: "Andreas"
+    family-names: "Harth"
     orcid: 'https://orcid.org/0000-0002-0702-510X'
   journal: "Extended Semantic Web Conference"
   month: 5
-  title: "Taking Control of Your Health Data: A Solid-based Mobile App for Wearable Data Collection and RDF Visualization"
+  title: "Taking Control of Your Health Data: A Solid-based Mobile App for Wearable Data Collection and RDF' Visualization"
   year: 2024
